@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Cartão de visita</title></head>
+    <style>
+        .body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #dde6df;
+                margin: 0;
+            }
+        .main {
+                    background-color: rgb(19, 19, 19);
+                    height: 323px;
+                    width: 520px;
+                    margin: 20px;
+                    border: 1px solid rgb(34, 34, 34);
+                    border-radius: 10px 10px 10px 10px;
+                    color: gold;
+                    padding: 4px ;
+                    font-size: 30px;
+                    position: absolute;
+                    justify-content: center;
+                    z-index: 1;
+        }
+        .meio-circulo {
+                    position: absolute;
+                    top: 99px; /* Posiciona o meio círculo acima do retângulo */
+                    left: 70px;
+                    width:450px; /* Largura do meio círculo */
+                    height: 230px; /* Altura do meio círculo (metade da altura do círculo completo) */
+                    background-color: #000000; /* Cor do meio círculo */
+                    border-radius: 220px 220px 0 0; /* Faz a parte de cima ser arredondada */
+                    z-index: 2;
+        }
+        .meio-circulo2 {
+                    position: absolute;
+                    top:15px; /* Posiciona o meio círculo acima do retângulo */
+                    left:25px;
+                    width: 450px; /* Largura do meio círculo */
+                    height: 300px; /* Altura do meio círculo (metade da altura do círculo completo) */
+                    background-color: rgb(39, 42, 41); /* Cor do meio círculo */
+                    border-radius: 0  250px 250px; /* Faz a parte de cima ser arredondada */
+                    border: 0.5px solid whitesmoke;
+                    z-index: 1;
+        }
+        .img{
+                border: #1f201f, solid;
+                height: 170px;
+                width: 170px;
+                position: absolute;
+                top: 85px;
+                left: 330px;
+                z-index: 4;
+        }
+        .pf {
+                color: rgb(0, 125, 8);
+                position: absolute;
+                justify-content: center;
+                font-size: 33px;
+                font-family: Impact,bold;
+                letter-spacing: 1px;
+                top: 40px;
+                left: 50px;
+                z-index: 2;
+        }
+        .nome {
+                color: white;
+                font-family: Georgia, 'Times New Roman', serif;
+                font-size: medium;
+                position: absolute;
+                top: 120px;
+                left: 70px;
+                z-index: 2;
+        }
+        .email{
+                color: white;
+                font-family: Georgia, 'Times New Roman', serif,;
+                font-size: medium;
+                position: absolute;
+                top: 170px;
+                left: 70px;
+                z-index: 2;
+        }
+        .telefone{
+                color: white;
+                font-family: Georgia, 'Times New Roman', Times, ;
+                font-size: medium;
+                position: absolute;
+                top: 220px;
+                left: 70px;
+                z-index: 2;
+        }
+        .insta {
+            height: 40px;
+            position: absolute;
+            top: 275px;
+            left: 460px;
+            z-index: 2;
+        }
+        .git{
+            height: 35px;
+            position: absolute;
+            top: 275px;
+            left: 330px;
+            z-index: 2;
+        }
+    </style>
+
+    <body class="body">
+        <main class="main">
+            <div class="meio-circulo"></div>
+            <div class="meio-circulo2"></div>
+            <header>
+                <div><img src="/IMG/eu.jpg" class="img"></div>
+                <div class="pf">Policial Federal</div>
+                <div class="nome">David Fialho de França</div>
+                <div class="email">david.franca10@aluno.ifce.edu.br</div>
+                <div class="telefone">Telefone: (85) 98222-3486</div>
+            </header>
+            <footer>
+                <nav>
+                    <a href="https://www.instagram.com/david_franca.x" target="_blank"><img src="/IMG/insta.jpeg" alt="" class="insta"></a>
+                    <a href="https://github.com/davidfranca10" target="_blank"><img src="/IMG/R.png" alt="" class="git"></a>
+                </nav>
+            </footer>
+        </main>
+    </body>
+</html>
